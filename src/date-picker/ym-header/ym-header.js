@@ -4,7 +4,6 @@ import styles from './ym-header.scss';
 import {getShortMonthName} from "../utility";
 
 const YmHeader = (props) => {
-  console.log('YmHeader', props);
   return (
     <Styler styles={styles}>
       <div className="ym-header-wrapper">

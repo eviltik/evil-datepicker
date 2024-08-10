@@ -112,9 +112,6 @@ export default class YmHeader extends Component {
   }
 
   render(props, state, context) {
-  
-    console.log(props);
-    
     return (
       <Styler styles={styles}>
         <div className="ym-slider-wrapper">
