@@ -1,8 +1,8 @@
 {
   "name": "evil-datepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple date picker web component, built with Preact, support range date selection and locales",
-  "main": "index.js",
+  "main": "dist/date-picker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --port 9990",
@@ -26,7 +26,6 @@
     "to-string-loader": "^1.2.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.93.0",
-    "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
