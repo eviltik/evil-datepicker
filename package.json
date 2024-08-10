@@ -1,6 +1,6 @@
 {
   "name": "evil-datepicker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple date picker web component, built with Preact, support range date selection and locales",
   "main": "dist/date-picker.js",
   "scripts": {
