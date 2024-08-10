@@ -1,5 +1,5 @@
 {
-  "name": "wc-date-picker",
+  "name": "@eviltik/wc-date-picker",
   "version": "1.0.0",
   "description": "Simple date picker web component, built with Preact, support range date selection and locales",
   "main": "index.js",
