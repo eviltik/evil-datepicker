@@ -1,0 +1,34 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "globals":{
+        "$$":true,
+        "APPNAME":true,
+        "VERSION":true,
+        "PRODUCTION":true,
+        "BUILD_AS_MODULE":true,
+        "__dirname":true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        //"indent": "off",
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-undef": "error" // Ajout de la règle pour détecter les variables non déclarées
+    }
+}
