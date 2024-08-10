@@ -54,6 +54,7 @@ export default class DatePickerContainer extends Component {
       isRange: props.range === 'true',
       isRangeInMotion: false,
       rangeSelected: false,
+      locale: props.hasOwnProperty('locale') ? props.locale : 'en'
     };
     stateObj.isRangeInMotion = !!(stateObj.isRange && stateObj.first && !stateObj.second);
     stateObj.rangeSelected = !!(stateObj.isRange && stateObj.first && stateObj.second);
@@ -82,13 +83,15 @@ export default class DatePickerContainer extends Component {
       currentMonth: state.currentMonth,
       showYMSlider: this.showYMSlider,
       changeMonth: this.changeMonth,
-      changeYearMonth: this.changeYearMonth
+      changeYearMonth: this.changeYearMonth,
+      locale: state.locale
     };
 
     this.ymSliderProps = {
       currentYear: state.currentYear,
       currentMonth: state.currentMonth,
-      changeYearMonth: this.changeYearMonth
+      changeYearMonth: this.changeYearMonth,
+      locale: state.locale
     }
   }
 

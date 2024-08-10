@@ -1,2 +1,3 @@
-# wc-date-picker
-wc-simple-date-picker
+# evil-datepicker
+evil-datepicker
+

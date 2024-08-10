@@ -16,6 +16,7 @@ const WebComps = () => {
         <DatePickerWrapper
           position='manual'
           range='true'
+          locale='en'
           dispatchEvent={dispatchEvent}
           end={new Date(2020, 4, 7).toString()}
           start={new Date().toString()}

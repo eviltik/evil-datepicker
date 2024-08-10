@@ -2,6 +2,6 @@ import {registerComponent} from "./lib";
 import DatePickerWrapper from "./date-picker-wrapper";
 
 registerComponent({
-  name: 'wc-date-picker',
+  name: 'evil-datepicker',
   component: DatePickerWrapper
 });
