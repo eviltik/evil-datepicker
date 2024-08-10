@@ -112,16 +112,17 @@ export default class YmHeader extends Component {
   }
 
   render(props, state, context) {
+  
     return (
       <Styler styles={styles}>
         <div className="ym-slider-wrapper">
           <div className="title-container">
-            {getShortMonthName(this.state.monthSelected)} {this.state.yearSelected}
+            {getShortMonthName(props.locales, state.monthSelected)} {this.state.yearSelected}
           </div>
           <div className="main-container">
             <div className="month-container">
               {
-                SHORT_MONTH_NAMES.map((monthName, monthInd) =>
+                SHORT_MONTH_NAMES[this.props.locales || 'en'].map((monthName, monthInd) =>
                   (
                     <div onClick={() => this.setMonth(monthInd)} className={monthInd === this.state.monthSelected ? 'active': ''}>
                       {monthName}

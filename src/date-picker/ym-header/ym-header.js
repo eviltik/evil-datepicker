@@ -11,7 +11,7 @@ const YmHeader = (props) => {
         <div className="arrow-container" onClick={() => props.changeMonth(props.currentMonth - 1)}>
           <div className="arrow left"></div>
         </div>
-        <div className="month-year-container" onClick={props.showYMSlider}>{getShortMonthName(props.currentMonth)} {props.currentYear}</div>
+        <div className="month-year-container" onClick={props.showYMSlider}>{getShortMonthName(props.locale, props.currentMonth)} {props.currentYear}</div>
         <div className="arrow-container" onClick={() => props.changeMonth(props.currentMonth + 1)}>
           <div className="arrow right"></div>
         </div>

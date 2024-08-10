@@ -155,7 +155,7 @@ export default class MonthCalendar extends Component {
         <div className={this.props.readonly ? 'month-calendar-wrapper freeze-events' : 'month-calendar-wrapper'}>
           <div className="week-day-names">
             {
-              SHORT_DAY_NAMES.map(day => (
+              SHORT_DAY_NAMES[props.locale || 'en'].map(day => (
                 <div>{day}</div>
               ))
             }
